@@ -1,0 +1,17 @@
+@use "../base" as *;
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  &__item {
+    margin: 1rem;
+  }
+  a {
+    font-family: $base-font-family;
+    font-size: 2rem;
+    font-weight: $bold;
+    color: #333;
+    padding: 0.5rem;
+  }
+}
