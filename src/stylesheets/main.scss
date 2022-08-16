@@ -8,7 +8,100 @@ html {
 }
 
 body {
+  font-size: 1.6rem;
+}
+
+a {
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.main__title {
+    margin: 3rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: $bold;
+}
+
+.works {
+  &__outline {
+    padding: 0 2rem;
+  }
+  &__inner {
+    max-width: 118rem;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent 34%,
+      #f0f0f0 34%,
+      #f0f0f0 100%
+    );
+    padding: 5rem 0;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__image {
+    max-width: 75rem;
+    width: 100%;
+    margin-right: 1rem;
+  }
+  &__content {
+    max-width: 43rem;
+    width: 100%;
+    text-align: center;
+  }
+  &__text {
     font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}
+
+.mt-30 {
+  margin-top: 3rem;
+}
+.mb-50 {
+    margin-bottom: 5rem;
+}
+.mt-50 {
+  margin-top: 5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 70px;
+  background-color: #393939;
+  border: 1px solid #393939;
+  border-radius: 50px;
+  font-size: 2rem;
+  font-weight: $bold;
+  letter-spacing: 0.08em;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: #f0f0f0;
+    border: 1px solid #393939;
+    color: #393939;
+    transition: all 0.3s ease;
+  }
+}
+
+.section-header {
+  color: cadetblue;
+  &__title {
+    font-size: 3.6rem;
+    letter-spacing: 0.05em;
+  }
+  &__subtitle {
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.05em;
+  }
 }
 
 ////////////////////
@@ -28,25 +121,4 @@ body {
   @include mq("sm") {
     display: block;
   }
-}
-
-.main-image {
-  background-image: url("../images/thumbnail.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  width: 100%;
-  height: 600px;
-  border-radius: 2em;
-  margin: 1em 0;
-}
-
-.icon {
-  width: 12.8rem;
-  height: 12.8rem;
-  padding: 4px;
-  position: absolute;
-  top: 1em;
-  left: 1em;
 }

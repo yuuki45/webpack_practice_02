@@ -1,10 +1,22 @@
 extends _layout.pug
 
 block locals 
-  - var title = 'hello, pug' 
+  - var title = 'top' 
 
-block content 
-  h1 Hello, Pug 
-  div#react-root 
-  .main-image 
-    img.icon(src="../images/icon.png")
+block MainContent 
+  h1.main__title Webpack Course practice
+  include _menu
+  section.works.mt-50.mb-50
+    .works__outline
+      .works__inner 
+        .works__container 
+          .works__image 
+            img(src="../images/thumbnail.jpg", alt="")
+          .works__content 
+            .section-header  
+              h2.section-header__title Title 
+              span.section-header__subtitle SubTitle
+            .mt-30 
+            p.works__text テキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキスト
+            .works__button.mt-30
+              a.button(href="") button 
