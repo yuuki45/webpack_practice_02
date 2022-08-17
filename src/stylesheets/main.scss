@@ -12,16 +12,16 @@ body {
 }
 
 a {
-    &:hover {
-        opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .main__title {
-    margin: 3rem;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: $bold;
+  margin: 3rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: $bold;
 }
 
 .works {
@@ -40,10 +40,17 @@ a {
       #f0f0f0 100%
     );
     padding: 5rem 0;
+    @include mq('md') {
+        background: #f0f0f0;
+        padding: 0 0 5rem 0;
+    }
   }
   &__container {
     display: flex;
     align-items: center;
+    @include mq('md') {
+        display: block;
+    }
   }
   &__image {
     max-width: 75rem;
@@ -54,6 +61,9 @@ a {
     max-width: 43rem;
     width: 100%;
     text-align: center;
+    @include mq('md') {
+        margin: 2rem auto 0;
+    }
   }
   &__text {
     font-size: 1.6rem;
@@ -65,7 +75,7 @@ a {
   margin-top: 3rem;
 }
 .mb-50 {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 .mt-50 {
   margin-top: 5rem;
