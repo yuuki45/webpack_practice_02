@@ -4,7 +4,7 @@ import '../stylesheets/main.scss';
 //APIページなら以下実行
 const pageurl = window.location.href;
 
-if (pageurl === 'http://localhost:8080/api.html') {
+// if (pageurl === 'api.html') {
 
   //位置情報の取得に成功したらajaxRequestファンクションを呼び出す
   function success(pos) {
@@ -87,4 +87,4 @@ if (pageurl === 'http://localhost:8080/api.html') {
         console.log('$.ajax faild!');
       })
   }
-}
+// }
