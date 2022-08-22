@@ -1,0 +1,33 @@
+@use '../base/' as *;
+
+.news {
+  &__inner {
+    padding: 0 2rem 0 2rem;
+    max-width: 118rem;
+    width: 100%;
+    margin: auto;
+  }
+  // &__content + .news__content {
+  //   margin-top: 1.5rem;
+  // }
+  &__content {
+    padding: 1.5rem 0;
+    border-top: 1px solid #393939;
+  }
+  &__content:last-child {
+    border-bottom: 1px solid #393939;
+  }
+  &__category {
+    font-size: 1.4rem;
+    margin-left: 3rem;
+    padding: .8rem 2.2rem;
+    border: 1px solid #393939;
+    display: inline-block;
+  }
+  &__text {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    display: inline-block;
+  }
+}

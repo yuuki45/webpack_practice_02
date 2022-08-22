@@ -1,0 +1,21 @@
+extends _layout.pug
+
+block locals 
+  - var title = 'API'
+
+block MainContent 
+  h1 API
+  include _menu
+  .api.mt-50.mb-50
+    p あなたは今
+    p.api__position#loc の場所にいます。
+    p 精度は半径
+      span.api__position#accuracy 
+      |です。
+    section 
+      h2#place
+      #now
+        #weather
+      table#forecast  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -55,7 +55,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|jpg|jpeg)/,
+                test: /\.(png|jpg|jpeg|svg|gif)/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -107,6 +107,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/templates/about/about.pug',
             filename: 'about/about.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/templates/api.pug',
+            filename: 'api.html',
         }),
         new CleanWebpackPlugin(),
     ],

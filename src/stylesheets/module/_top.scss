@@ -1,12 +1,55 @@
 @use '../base/' as *;
 
-.container {
-  width: 1000px;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0.5em;
-  @include mq("md") {
-      width: 500px;
-      padding: 0 20px;
+.main__title {
+  margin: 3rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: $bold;
+}
+
+.works {
+  &__outline {
+    padding: 0 2rem;
+  }
+  &__inner {
+    max-width: 118rem;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent 34%,
+      #f0f0f0 34%,
+      #f0f0f0 100%
+    );
+    padding: 5rem 0;
+    @include mq('md') {
+        background: #f0f0f0;
+        padding: 0 0 5rem 0;
     }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    @include mq('md') {
+        display: block;
+    }
+  }
+  &__image {
+    max-width: 75rem;
+    width: 100%;
+    margin-right: 1rem;
+  }
+  &__content {
+    max-width: 43rem;
+    width: 100%;
+    text-align: center;
+    @include mq('md') {
+        margin: 2rem auto 0;
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
 }

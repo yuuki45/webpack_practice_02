@@ -1,0 +1,67 @@
+@use '../base/' as *;
+
+.blog {
+  margin-bottom: 3rem;
+  &__inner {
+      max-width: 118rem;
+      width: 100%;
+      margin: auto;
+      padding: 0 2rem;
+  }
+  &__items {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+
+.card {
+  max-width: calc(33.33333% - 2.5rem * 2 / 3);
+  width: 100%;
+  box-shadow: 1px 1px 3px gainsboro;
+  + .card {
+      margin-left: 2.5rem;
+      &:nth-child(3n + 1) {
+          margin-left: 0;
+      }
+      &:nth-child(n + 4) {
+          margin-top: 2.5rem;
+      }
+  }
+  &__img {
+      padding-top: 66.5%;
+      position: relative;
+      img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+      }
+  }
+  &__body {
+      padding: 0.4rem 2.4rem 1.5rem;
+  }
+  &__title {
+  font-size: 1.8rem;
+  line-height: 2;
+  }
+  &__content {
+      margin-top: 2rem;
+      line-height: 1.5;
+  }
+  &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+  }
+  &__date {
+
+  }
+  &__category {
+      background-color: aquamarine;
+      padding: 0.8rem 1rem;
+  }
+}

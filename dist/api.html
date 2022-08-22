@@ -3,21 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>API</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&amp;display=swap" rel="stylesheet">
-  <link href=".././stylesheets/main-00a2a8f671c0397cdeba.css" rel="stylesheet"></head>
+  <link href="./stylesheets/main-00a2a8f671c0397cdeba.css" rel="stylesheet"></head>
   <body class="container"> 
-    <h1>about</h1>
+    <h1>API</h1>
     <div class="menu">
       <div class="menu__item"><a href="/index.html">home</a></div>
       <div class="menu__item"><a href="/access.html">access</a></div>
       <div class="menu__item"><a href="/about/about.html">about</a></div>
       <div class="menu__item"><a href="/api.html">api</a></div>
     </div>
+    <div class="api mt-50 mb-50">
+      <p>あなたは今</p>
+      <p class="api__position" id="loc">の場所にいます。</p>
+      <p>精度は半径<span class="api__position" id="accuracy"> </span>です。</p>
+      <section> 
+        <h2 id="place"></h2>
+        <div id="now">
+          <div id="weather"></div>
+        </div>
+        <table id="forecast"> </table>
+      </section>
+    </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <footer class="footer"> 
       <div class="footer__text">Webpack Course practice </div>
     </footer>
-  <script type="text/javascript" src="../javascripts/main-00a2a8f671c0397cdeba.js"></script></body>
+  <script type="text/javascript" src="javascripts/main-00a2a8f671c0397cdeba.js"></script></body>
 </html>
